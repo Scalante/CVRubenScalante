@@ -15,7 +15,7 @@ body {
 
 .main {
 	background-color: white;
-	width: 800px;
+	width: 300px;
 	height: auto;
 	position: absolute;
 	transform: translate(-50%, -50%);
