@@ -13,14 +13,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/*.main {
+.main {
 	background-color: white;
-	width: 300px;
-	height: auto;
+	/*width: 300px;*/
+	/*height: auto;*/
 	position: absolute;
 	transform: translate(-50%, -50%);
 	left: 50%;
-}*/
+}
 
 /*Solución que permite acondicionar la página web dependiendo la resolución de la pantalla
 Cabe resaltar que, esta solución es incompleta ya que no es totalmente responsive
