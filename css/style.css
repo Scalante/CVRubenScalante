@@ -2,7 +2,7 @@
 
 html,
 body {
-	background: rgb(133, 133, 131);
+	background: rgb(255, 255, 255);
 	font-weight: bold;
 	letter-spacing: 2px;
 }
@@ -14,12 +14,11 @@ body {
 }
 
 .main {
-	background-color: white;
-	/*width: 300px;*/
-	/*height: auto;*/
-	/*position: absolute*/;
-	transform: translate(-50%, -50%);
-	left: 50%;
+    /*background-color: white;*/
+    width: 90%; /* Utilizando un porcentaje para adaptarse al tamaño de la pantalla */
+    max-width: 800px; /* Estableciendo un máximo para evitar que el contenido se vuelva demasiado ancho */
+    margin: 0 auto; /* Centrando horizontalmente */
+    padding: 20px; /* Agregando espacio alrededor del contenido */
 }
 
 /*Solución que permite acondicionar la página web dependiendo la resolución de la pantalla
@@ -27,13 +26,13 @@ Cabe resaltar que, esta solución es incompleta ya que no es totalmente responsi
 pero funciona en una pantalla de 27" y 24" (buscaré una mejor solución más adelante)*/
 /*@media (min-width: 1536px) and (max-height: 800px) {
 	.main {
-		top: 90%;
+		top: 200%;
 	}
 }
 
 @media (min-width: 1280px) and (max-height: 600px) {
 	.main {
-		top: 100%;
+		top: 200%;
 	}
 }*/
 
