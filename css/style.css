@@ -175,12 +175,7 @@ span[estilo="master"] {
     background-color: white;
 }
 
-.postgresql {
-    width: 60%;
-    background-color: white;
-}
-
-.mysql {
+.general {
     width: 60%;
     background-color: white;
 }
@@ -194,17 +189,17 @@ span[estilo="master"] {
 }
 
 .wordpress {
-    width: 65%;
+    width: 50%;
     background-color: white;
 }
 
 .divi {
-    width: 70%;
+    width: 50%;
     background-color: white;
 }
 
 .illustrator {
-    width: 65%;
+    width: 40%;
     background-color: white;
 }
 
@@ -284,6 +279,48 @@ a[estilo="redsocial"]:hover {
     border-bottom: 1px solid;
     color: #ffffff;
 }
+
+
+/*
+****Ocultar o desplegar cada experiencia laboral****
+*/
+.box-two {
+    width: 100%;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #fbb03b;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tab-button:hover {
+    background-color: #4d4d4d;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow: auto; /* Permite el desplazamiento si el contenido es más grande que el contenedor */
+    max-height: 400px; /* Ajusta esta altura según tus necesidades */
+}
+
+.tab-content ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {

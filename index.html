@@ -132,17 +132,22 @@
                 </p>
                 <p class="p1">PostgreSQL
                 <div class="skill-container">
-                    <div class="skill postgresql"></div>
+                    <div class="skill general"></div>
                 </div>
                 </p>
                 <p class="p1">MySQL
                 <div class="skill-container">
-                    <div class="skill mysql"></div>
+                    <div class="skill general"></div>
                 </div>
                 </p>
                 <p class="p1">MongoDB
                 <div class="skill-container">
-                    <div class="skill mysql"></div>
+                    <div class="skill general"></div>
+                </div>
+                </p>
+                <p class="p1">CosmosDB
+                <div class="skill-container">
+                    <div class="skill general"></div>
                 </div>
                 </p>
             </div>
@@ -179,10 +184,13 @@
                     <p>HOBBIES</p>
                 </div>
                 <div class="h-div">
+                    <i class="material-icons icons-two">book</i>
+                    <i class="material-icons icons-two">developer_mode</i>
                     <i class="material-icons icons-two">movie</i>
                     <i class="material-icons icons-two">music_note</i>
                     <i class="material-icons icons-two">directions_bike</i>
-                    <i class="material-icons icons-two">developer_mode</i>
+                    <i class="material-icons icons-two">sports_soccer</i>
+                    
                 </div>
             </div>
             <br>
@@ -193,7 +201,7 @@
         <div class="right">
             <div class="name-div">
                 <h1>RUBEN DARIO SCALANTE ROJAS</h1>
-                <p>Desarrollador BackEnd</p>
+                <p>Desarrollador Back-End</p>
             </div>
 
             <div class="box-two">
@@ -212,7 +220,7 @@
 
             <div class="box-two">
                 <h2>EDUCACIÓN <i class="material-icons icons-three">border_color</i></h2>
-                <p class="p3">2025<span estilo="master">UNIR - "La universidad en internet"</span></p>
+                <p class="p3">2023 - 2024<span estilo="master">UNIR - "La universidad en internet"</span></p>
                 <p class="p2">
                     Máster Universitario en Ingeniería de Software y Sistemas Informáticos
                 </p>
@@ -226,62 +234,167 @@
                 </p>
             </div>
 
+
             <div class="box-two">
                 <h2>EXPERIENCIA LABORAL<i class="material-icons icons-three">folder</i></h2>
-                <p class="p3">Febrero (2023) - Actual &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>INTEIA</span>
-                </p>
-                <span estilo="ciudad">Medellin - Antioquia</span>
 
-                <ul class="p2 descripcion-empleo">
-                    <li>Migrar BackEnd .NET Core 3.1 a .NET 6</li>
-                    <li>Organizar y refactorizar Arquitectura monolítica (N capas/niveles) BackEnd .Net Core 3.1 y .Net
-                        6</li>
-                    <li>Analizar, apoyar e integrar BackEnd .Net Core 3.1 y .Net 6 con Azure DevOps (CI/CD)</li>
-                    <li>Analizar, apoyar y subsanar dificultades de seguridad en BackEnd .NET Core 3.1 y .Net 6</li>
-                    <li>Gestionar e implementar sugerencias de calidad y seguridad en las plataformas SonarQube y Snyk
-                    </li>
-                    <li>Analizar, investigar e implementar OWASP Top Ten (diez riesgos de seguridad más importantes)
-                        para mejorar la calidad del producto de software
-                    </li>
-                </ul>
+                <div class="experience">
+                    <button class="tab-button" onclick="toggleTab('inteia')">
+                        Febrero (2023) - Actual &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>INTEIA</span> -
+                        Medellin - Antioquia
+                        <i class="fas fa-chevron-down" style="float: right;"></i>
+                    </button>
+                    <div id="inteia" class="tab-content">
+                        <ul class="p2 descripcion-empleo">
+                            <li>
+                                <b>Migrar BackEnd .NET Core 3.1 a .NET 6</b>
+                                <ul>
+                                    <li>Identificar todas las dependencias y paquetes utilizados en el proyecto actual.</li>
+                                    <li>Evaluar la compatibilidad de las bibliotecas y dependencias con .NET 6.</li>
+                                    <li>Actualizar el framework del proyecto a .NET 6.</li>
+                                    <li>Resolver cualquier problema de compatibilidad y realizar pruebas exhaustivas.</li>
+                                    <li>Realizar pruebas unitarias y de integración.</li>
+                                    <li>Implementar en un entorno de prueba antes de pasar a producción.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Organizar, refactorizar y soportar Arquitectura monolítica (N capas/niveles) BackEnd .Net Core 3.1 y .Net 6</b>
+                                <ul>
+                                    <li>Documentar la arquitectura actual.</li>
+                                    <li>Identificar áreas de mejora y refactorización.</li>
+                                    <li>Aplicar principios SOLID y patrones de diseño para mejorar la estructura del código.</li>
+                                    <li>Dividir responsabilidades y modularizar el código en capas claras.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Analizar, apoyar e integrar BackEnd .Net Core 3.1 y .Net 6 con Azure DevOps (CI/CD)</b>
+                                <ul>
+                                    <li>Apoyar en la creación de pipelines de CI/CD en Azure DevOps.</li>
+                                    <li>Colaborar en la configuración de tareas de compilación, pruebas y despliegue automatizado.</li>
+                                    <li>Asistir en la integración con herramientas de monitoreo y alertas.</li>
+                                    <li>Asegurar, junto con el Ingeniero DevOps, que los despliegues sean reproducibles y fiables.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Analizar, apoyar y subsanar dificultades de seguridad en BackEnd .NET Core 3.1 y .Net 6</b>
+                                <ul>
+                                    <li>Revisar y analizar las plataformas SonarQube y Snyk en los pipelines de CI/CD.</li>
+                                    <li>Identificar y corregir vulnerabilidades.</li>
+                                    <li>Seguir las recomendaciones de OWASP Top Ten.</li>
+                                    <li>Implementar medidas de seguridad adicionales como autenticación y autorización seguras.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Gestionar e implementar sugerencias de calidad y seguridad en las plataformas SonarQube y Snyk</b>
+                                <ul>
+                                    <li>Monitorear reportes de calidad y seguridad.</li>
+                                    <li>Implementar mejoras basadas en los resultados de los análisis.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Analizar, investigar e implementar OWASP Top Ten</b>
+                                <ul>
+                                    <li>Estudiar los riesgos de OWASP Top Ten y sus implicaciones.</li>
+                                    <li>Aplicar soluciones y mejores prácticas para mitigar estos riesgos en el código y la arquitectura.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Implementación de Arquitectura de Software y Principios de Diseño en .NET 8</b>
+                                <ul>
+                                    <li>Implementar arquitectura limpia y hexagonal que faciliten la mantenibilidad y escalabilidad.</li>
+                                    <li>Implementar estrategias de resiliencia como circuit breakers, retries y fallbacks.</li>
+                                    <li>Utilizar patrones de diseño como CQRS y Mediator para estructurar el código de manera eficiente.</li>
+                                    <li>Trabajar con diferentes tipos de arquitecturas, incluyendo monolitos y microservicios.</li>
+                                </ul>
+                            <li>
+                                <b>MongoDB y Cosmos DB</b>
+                                <ul>
+                                    <li>Realizar migraciones de datos entre diferentes versiones y entornos de MongoDB y Cosmos DB.</li>
+                                    <li>Implementar y mantener índices para mejorar la eficiencia de las consultas.</li>
+                                    <li>Monitorear y analizar el rendimiento de las bases de datos, ajustando configuraciones según sea necesario.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Implementación y Gestión de Contenedores Docker</b>
+                                <ul>
+                                    <li>Crear contenedores Docker para facilitar el despliegue y la escalabilidad.</li>
+                                    <li>Configurar y gestionar redes de contenedores para asegurar la comunicación eficiente entre servicios.</li>
+                                    <li>Optimizar imágenes Docker para reducir el tiempo de despliegue y el uso de recursos.</li>
+                                    <li>Implementar prácticas de seguridad en contenedores Docker para proteger aplicaciones y datos.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Herramientas y Tecnologías Utilizadas</b>
+                                <ul>
+                                    <li>Uso de Mediator para facilitar la comunicación entre componentes de la aplicación.</li>
+                                    <li>Implementación de Hangfire para la gestión de tareas en segundo plano.</li>
+                                    <li>Patrón UnitOfWork para gestionar transacciones de bases de datos de manera eficiente.</li>
+                                    <li>Inyección de dependencias para mejorar la modularidad y testabilidad del código.</li>
+                                    <li>Uso de proxies para la gestión de llamadas a servicios externos.</li>
+                                    <li>Implementación de Redis Cache para mejorar el rendimiento de la aplicación mediante el almacenamiento en caché.</li>
+                                    <li>Uso de Fluent Validation para la validación de datos de entrada de manera fluida y expresiva.</li>
+                                    <li>Configuración y uso de Azure Key Vault para la gestión segura de secretos.</li>
+                                    <li>Implementación de Azure Communication Services.</li>
+                                    <li>Implementación de seguridad con JWT (JSON Web Tokens).</li>
+                                    <li>Implementación de SendGrid para el envío de correos electrónicos.</li>
+                                    <li>Application Insights para el monitoreo de aplicaciones.</li>
+                                    <li>Configuración y uso de Azure Entra ID B2C para la gestión de identidades y autenticación de usuarios.</li>
+                                    <li>Implementación de pruebas unitarias con XUnit para asegurar la calidad del código.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <p class="p3">Febrero (2022) - Enero (2023)
-                    <span>INDIGO TECHNOLOGIES</span>
-                </p>
-                <span estilo="ciudad">Neiva - Huila</span>
-                <ul class="p2 descripcion-empleo">
-                    <li>En el momento que me vinculé con la empresa se me encargó
-                        implementar JSON Web Tokens (JWT), implementé una Api en .Net
-                        Framework y posteriormente una Api con .Net 6</li>
-                    <li>Implementé una Api para relacionar la información básica de un
-                        paciente, la estrategia que utilicé fue First Database con .Net 6</li>
-                    <li>Documentación con Swagger y testear con Postman</li>
-                    <li>Subí los proyectos anteriormente mencionados Azure DevOps.</li>
-                    <li>Interactúe con Azure DevOps, Git (Subir proyectos, clonar
-                        proyectos, crear ramas, subir pull requests, bajar cambios, solución
-                        de conflictos, etc.)</li>
-                    <li>Implementé una Api para consumir endpoints específicos de una
-                        aplicación externa</li>
-                </ul>
-                <p class="p3">Junio (2021) - Enero (2022) &nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>SOAINT SOFTWARE</span>
-                </p>
-                <span estilo="ciudad">Bogotá D.C - Cundinamarca</span>
-                <ul class="p2 descripcion-empleo">
-                    <li>A lo largo de mi estancia, participe en la creación de múltiples
-                        microservicios, implementé buenas prácticas de desarrollo de
-                        software, utilicé el lenguaje de manipulación de datos (DML), realicé múltiples
-                        procedimientos almacenados, triggers, cursores en el motor de base datos Sql Server</li>
-                    <li>Manipulación de JSON</li>
-                    <li>Documentación con Swagger y testear con Postman</li>
-                    <li>Interactúe con Openshift subiendo, bajando (Pods) y realizando algunas configuraciones básica
-                    </li>
-                    <li>Interactúe con Swagger UI para la documentación oportuna de las Apis</li>
-                </ul>
+                <div class="experience">
+                    <button class="tab-button" onclick="toggleTab('indigo')">
+                        Febrero (2022) - Enero (2023) &nbsp;&nbsp;&nbsp;&nbsp;<span>INDIGO TECHNOLOGIES</span> - Neiva - Huila
+                        <i class="fas fa-chevron-down" style="float: right;"></i>
+                    </button>
+                    <div id="indigo" class="tab-content">
+                        <ul class="p2 descripcion-empleo">
+                            <li>En el momento que me vinculé con la empresa se me encargó
+                                implementar JSON Web Tokens (JWT), implementé una Api en .Net
+                                Framework y posteriormente una Api con .Net 6</li>
+                            <li>Implementé una Api para relacionar la información básica de un
+                                paciente, la estrategia que utilicé fue First Database con .Net 6</li>
+                            <li>Documentación con Swagger y testear con Postman</li>
+                            <li>Subí los proyectos anteriormente mencionados Azure DevOps.</li>
+                            <li>Interactúe con Azure DevOps, Git (Subir proyectos, clonar
+                                proyectos, crear ramas, subir pull requests, bajar cambios, solución
+                                de conflictos, etc.)</li>
+                            <li>Implementé una Api para consumir endpoints específicos de una
+                                aplicación externa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <button class="tab-button" onclick="toggleTab('soaint')">
+                        Junio (2021) - Enero (2022) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>SOAINT
+                            SOFTWARE</span> - Bogotá D.C
+                        <i class="fas fa-chevron-down" style="float: right;"></i>
+                    </button>
+                    <div id="soaint" class="tab-content">
+                        <ul class="p2 descripcion-empleo">
+                            <li>A lo largo de mi estancia, participe en la creación de múltiples
+                                microservicios, implementé buenas prácticas de desarrollo de
+                                software, utilicé el lenguaje de manipulación de datos (DML), realicé múltiples
+                                procedimientos almacenados, triggers, cursores en el motor de base datos Sql Server</li>
+                            <li>Manipulación de JSON</li>
+                            <li>Documentación con Swagger y testear con Postman</li>
+                            <li>Interactúe con Openshift subiendo, bajando (Pods) y realizando algunas configuraciones básica
+                            </li>
+                            <li>Interactúe con Swagger UI para la documentación oportuna de las Apis</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Incluir el archivo de script -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
