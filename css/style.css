@@ -124,6 +124,16 @@ span[estilo="master"] {
 /*Fin Lenguajes*/
 
 /*Inicio Framework*/
+.netcore {
+    width: 75%;
+    background-color: white;
+}
+
+.netframework {
+    width: 75%;
+    background-color: white;
+}
+
 .aspnet {
     width: 75%;
     background-color: white;
@@ -155,19 +165,6 @@ span[estilo="master"] {
 }
 
 /*Fin Framework*/
-
-/*Inicio Plataformas*/
-.netcore {
-    width: 75%;
-    background-color: white;
-}
-
-.netframework {
-    width: 75%;
-    background-color: white;
-}
-
-/*Fin Plataformas*/
 
 /*Inicio Base de Datos*/
 .sqlserver {
