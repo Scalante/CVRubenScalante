@@ -143,13 +143,20 @@ const TRANSLATIONS = {
     /* Projects */
     projects: {
       title: 'Proyectos',
+      note: 'Dado mi rol corporativo, la gran mayoría de los sistemas backend que he desarrollado son privados (sujetos a NDA), alojados en repositorios restringidos y desplegados en nubes empresariales. A continuación, destaco conceptos clave de arquitecturas que he construido:',
       items: [
         {
-          name:  'CV Digital Interactivo',
-          desc:  'Currículum vitae digital construido con HTML, CSS y JS vanilla. Diseño responsivo, barra lateral animada y acordeones de experiencia.',
-          tags:  ['HTML', 'CSS', 'JavaScript'],
-          links: { github: 'https://github.com/Scalante?tab=repositories' },
+          name:  'Ecosistema Microservicios (Privado)',
+          desc:  'Arquitectura transaccional de alto rendimiento empleando Clean Architecture, CQRS y patrón Mediator, con despliegue en Azure y Docker.',
+          tags:  ['.NET 8', 'CQRS', 'Azure', 'Docker'],
+          links: { private: true },
         },
+        {
+          name:  'API Gateway & Serverless (Privado)',
+          desc:  'Modernización y desacoplamiento de monolitos migrando flujos a AWS Lambda, con control de acceso vía API Gateway e indexación en DynamoDB.',
+          tags:  ['AWS Lambda', 'DynamoDB', 'Microservicios'],
+          links: { private: true },
+        }
       ],
     },
 
@@ -328,13 +335,20 @@ const TRANSLATIONS = {
 
     projects: {
       title: 'Projects',
+      note: 'Given my corporate role, the vast majority of backend systems I have developed are private (under NDA), hosted in restricted repositories, and deployed in enterprise clouds. Below, I highlight key architectural concepts I have built:',
       items: [
         {
-          name:  'Interactive Digital CV',
-          desc:  'Digital résumé built with vanilla HTML, CSS and JS. Responsive design, animated sidebar and collapsible experience sections.',
-          tags:  ['HTML', 'CSS', 'JavaScript'],
-          links: { github: 'https://github.com/Scalante?tab=repositories' },
+          name:  'Microservices Ecosystem (Private)',
+          desc:  'High-performance transactional architecture using Clean Architecture, CQRS, and Mediator pattern, deployed on Azure using Docker.',
+          tags:  ['.NET 8', 'CQRS', 'Azure', 'Docker'],
+          links: { private: true },
         },
+        {
+          name:  'API Gateway & Serverless (Private)',
+          desc:  'Monolith modernization and decoupling by migrating flows to AWS Lambda, with access control via API Gateway and indexing in DynamoDB.',
+          tags:  ['AWS Lambda', 'DynamoDB', 'Microservices'],
+          links: { private: true },
+        }
       ],
     },
 
