@@ -1,458 +1,493 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>CV - Ruben Dario Scalante Rojas</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Ruben Scalante — Backend Developer</title>
+  <meta name="description"
+    content="Ruben Dario Scalante Rojas — .NET Backend Developer. Clean Architecture, Azure, AWS, Docker, +4 years." />
+  <meta name="author" content="Ruben Dario Scalante Rojas" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ruben Scalante — Backend Developer" />
+  <meta property="og:description"
+    content=".NET Backend Developer. Clean Architecture · Azure & AWS · 4+ years." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
 </head>
 
-
 <body>
-    <div class="main">
-        <div class="left">
-            <br>
-            <div class="profile-img">
-                <img src="image/profile.jpg" alt="">
-            </div>
-            <div class="box-one">
-                <div class="heading">
-                    <p>CONTACTO</p>
-                </div>
-                <p class="p1"><i class="material-icons icons-one">call</i>(+57) 3118752745</p>
-                <p class="p1"><i class="material-icons icons-one">email</i>rubendarioscalante</p>
-                <p estilo="dominio" class="p1">@gmail.com</p>
-                <p class="p1"><a estilo="redsocial" target="_blank" href="https://github.com/Scalante?tab=repositories">
-                        <i class="fa-brands fa-github icons-one"></i>Scalante</a>
-                </p>
-                <p class="p1"><a estilo="redsocial" target="_blank"
-                        href="https://www.linkedin.com/in/ruben-dario-scalante-rojas-7437911a3">
-                        <i class="fa-brands fa-linkedin icons-one"></i>rubendarioscalante</a>
-                </p>
-            </div>
-            <br>
-            <div class="box-one">
-                <div class="heading">
-                    <p>LENGUAJES</p>
-                </div>
 
-                <p class="p1">C#
-                <div class="skill-container">
-                    <div class="skill csharp"></div>
-                </div>
-                </p>
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
 
-                <p class="p1">Visual Basic
-                <div class="skill-container">
-                    <div class="skill vb"></div>
-                </div>
-                </p>
+      <!-- Logo -->
+      <a href="#hero" class="navbar__logo" aria-label="Home">RS.</a>
 
-                <p class="p1">Java
-                <div class="skill-container">
-                    <div class="skill java"></div>
-                </div>
-                </p>
-            </div>
-            <br>
-            <div class="box-one">
-                <div class="heading">
-                    <p>FRAMEWORK</p>
-                </div>
-                <p class="p1">.Net Core (1x/2x/3x)
-                <div class="skill-container">
-                    <div class="skill netcore"></div>
-                </div>
-                </p>
-                <p class="p1">.Net (5x/6x/7x/8x)
-                <div class="skill-container">
-                    <div class="skill netcore"></div>
-                </div>
-                <p class="p1">.Net Framework
-                <div class="skill-container">
-                    <div class="skill netframework"></div>
-                </div>
-                </p>
-                <p class="p1">Spring Boot
-                <div class="skill-container">
-                    <div class="skill springboot"></div>
-                </div>
-                </p>
-                <p class="p1">Asp.Net Core MVC
-                <div class="skill-container">
-                    <div class="skill aspnet"></div>
-                </div>
-                </p>
-                <p class="p1">DevExpress
-                <div class="skill-container">
-                    <div class="skill devexpress"></div>
-                </div>
-                </p>
-                <p class="p1">Angular
-                <div class="skill-container">
-                    <div class="skill angular"></div>
-                </div>
-                </p>
-                <p class="p1">Bootstrap
-                <div class="skill-container">
-                    <div class="skill bootstrap"></div>
-                </div>
-                </p>
-                <p class="p1">React
-                <div class="skill-container">
-                    <div class="skill react"></div>
-                </div>
-                </p>
-            </div>
-            <br>
-            <div class="box-one">
-                <div class="heading">
-                    <p>BASE DE DATOS</p>
-                </div>
+      <!-- Desktop links -->
+      <div class="navbar__links" role="list">
+        <a id="nav-about"    class="navbar__link" href="#about"    data-section="about"    role="listitem">Sobre mí</a>
+        <a id="nav-stack"    class="navbar__link" href="#stack"    data-section="stack"    role="listitem">Stack</a>
+        <a id="nav-exp"      class="navbar__link" href="#exp"      data-section="exp"      role="listitem">Experiencia</a>
+        <a id="nav-edu"      class="navbar__link" href="#edu"      data-section="edu"      role="listitem">Educación</a>
+        <a id="nav-projects" class="navbar__link" href="#projects" data-section="projects" role="listitem">Proyectos</a>
 
-                <p class="p1">SQL Server
-                <div class="skill-container">
-                    <div class="skill sqlserver"></div>
-                </div>
-                </p>
-                <p class="p1">PostgreSQL
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-                <p class="p1">MySQL
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-                <p class="p1">MongoDB
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-                <p class="p1">CosmosDB
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-                <p class="p1">DynamoDB
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-            </div>
-            <br>
-            <div class="box-one">
-                <div class="heading">
-                    <p>NUBE</p>
-                </div>
-                <p class="p1">Azure
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-                <p class="p1">AWS
-                <div class="skill-container">
-                    <div class="skill general"></div>
-                </div>
-                </p>
-            </div>
-            <br>
-            <div class="box-one">
-                <div class="heading">
-                    <p>HABILIDADES</p>
-                </div>
+        <a id="nav-contact"  class="navbar__link" href="#contact"  data-section="contact"  role="listitem">Contacto</a>
+      </div>
 
-                <p class="p1">Html, Css, Javascript
-                <div class="skill-container">
-                    <div class="skill html"></div>
-                </div>
-                </p>
-                <p class="p1">WordPress
-                <div class="skill-container">
-                    <div class="skill wordpress"></div>
-                </div>
-                </p>
-                <p class="p1">Divi
-                <div class="skill-container">
-                    <div class="skill divi"></div>
-                </div>
-                </p>
-                <p class="p1">Illustrator
-                <div class="skill-container">
-                    <div class="skill illustrator"></div>
-                </div>
-                </p>
-            </div>
-            <br>
-            <div class="box-one">
-                <div class="heading">
-                    <p>HOBBIES</p>
-                </div>
-                <div class="h-div">
-                    <i class="material-icons icons-two">book</i>
-                    <i class="material-icons icons-two">developer_mode</i>
-                    <i class="material-icons icons-two">movie</i>
-                    <i class="material-icons icons-two">music_note</i>
-                    <i class="material-icons icons-two">directions_bike</i>
-                    <i class="material-icons icons-two">sports_soccer</i>
+      <!-- Language toggle -->
+      <button id="lang-toggle" class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-toggle__option active" data-lang="es">ES</span>
+        <span class="lang-toggle__option" data-lang="en">EN</span>
+      </button>
 
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-
-        <div class="right">
-            <div class="name-div">
-                <h1>RUBEN DARIO SCALANTE ROJAS</h1>
-                <p>Desarrollador Back-End</p>
-            </div>
-
-            <div class="box-two">
-                <h2>PERFIL PROFESIONAL<i class="material-icons icons-three"
-                        style="font-size: 28px!important; ">perm_identity</i></h2>
-                <p class="p2">
-                    Destacado por el alto sentido de responsabilidad en el trabajo, investigativo,
-                    con habilidades de liderazgo, organización, trabajo en equipo y buenas
-                    relaciones interpersonales. Poseo principios éticos y morales que me
-                    permiten desempeñarme con honestidad, transparencia, eficiencia, tolerancia
-                    y compromiso. Con deseos de aplicar mis conocimientos adquiridos durante
-                    mis oportunidades laborales, con posibilidades de crecimiento personal y
-                    profesional en un buen ambiente laboral.
-                </p>
-            </div>
-
-            <div class="box-two">
-                <h2>EDUCACIÓN <i class="material-icons icons-three">border_color</i></h2>
-                <p class="p3">2023 - 2024<span estilo="master">UNIR - "La universidad en internet"</span></p>
-                <p class="p2">
-                    Máster Universitario en Ingeniería de Software y Sistemas Informáticos
-                </p>
-                <p class="p3">2016 - 2021 <span>Corporación Universitaria del Huila "CORHUILA"</span></p>
-                <p class="p2">
-                    Ingeniero de Sistemas
-                </p>
-                <p class="p3">2010 - 2015 <span>Institución Educativa "Antonio Ricaurte - Maito"</span></p>
-                <p class="p2">
-                    Bachillerato Académico
-                </p>
-            </div>
-
-
-            <div class="box-two">
-                <h2>EXPERIENCIA LABORAL<i class="material-icons icons-three">folder</i></h2>
-
-                <div class="experience">
-                    <button class="tab-button" onclick="toggleTab('inteia')">
-                        Febrero (2023) - Actual
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>INTEIA</span>
-                        -
-                        Medellin - Antioquia
-                        <i class="fas fa-chevron-down" style="float: right;"></i>
-                    </button>
-                    <div id="inteia" class="tab-content">
-                        <ul class="p2 descripcion-empleo">
-                            <li>
-                                <b>Migrar BackEnd .NET Core 3.1 a .NET 6</b>
-                                <ul>
-                                    <li>Identificar todas las dependencias y paquetes utilizados en el proyecto actual.
-                                    </li>
-                                    <li>Evaluar la compatibilidad de las bibliotecas y dependencias con .NET 6.</li>
-                                    <li>Actualizar el framework del proyecto a .NET 6.</li>
-                                    <li>Resolver cualquier problema de compatibilidad y realizar pruebas exhaustivas.
-                                    </li>
-                                    <li>Realizar pruebas unitarias y de integración.</li>
-                                    <li>Implementar en un entorno de prueba antes de pasar a producción.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Organizar, refactorizar y soportar Arquitectura monolítica (N capas/niveles) BackEnd
-                                    .Net Core 3.1 y .Net 6</b>
-                                <ul>
-                                    <li>Documentar la arquitectura actual.</li>
-                                    <li>Identificar áreas de mejora y refactorización.</li>
-                                    <li>Aplicar principios SOLID y patrones de diseño para mejorar la estructura del
-                                        código.</li>
-                                    <li>Dividir responsabilidades y modularizar el código en capas claras.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Analizar, apoyar e integrar BackEnd .Net Core 3.1 y .Net 6 con Azure DevOps
-                                    (CI/CD)</b>
-                                <ul>
-                                    <li>Apoyar en la creación de pipelines de CI/CD en Azure DevOps.</li>
-                                    <li>Colaborar en la configuración de tareas de compilación, pruebas y despliegue
-                                        automatizado.</li>
-                                    <li>Asistir en la integración con herramientas de monitoreo y alertas.</li>
-                                    <li>Asegurar, junto con el Ingeniero DevOps, que los despliegues sean reproducibles
-                                        y fiables.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Analizar, apoyar y subsanar dificultades de seguridad en BackEnd .NET Core 3.1 y .Net
-                                    6</b>
-                                <ul>
-                                    <li>Revisar y analizar las plataformas SonarQube y Snyk en los pipelines de CI/CD.
-                                    </li>
-                                    <li>Identificar y corregir vulnerabilidades.</li>
-                                    <li>Seguir las recomendaciones de OWASP Top Ten.</li>
-                                    <li>Implementar medidas de seguridad adicionales como autenticación y autorización
-                                        seguras.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Gestionar e implementar sugerencias de calidad y seguridad en las plataformas
-                                    SonarQube y Snyk</b>
-                                <ul>
-                                    <li>Monitorear reportes de calidad y seguridad.</li>
-                                    <li>Implementar mejoras basadas en los resultados de los análisis.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Analizar, investigar e implementar OWASP Top Ten</b>
-                                <ul>
-                                    <li>Estudiar los riesgos de OWASP Top Ten y sus implicaciones.</li>
-                                    <li>Aplicar soluciones y mejores prácticas para mitigar estos riesgos en el código y
-                                        la arquitectura.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Implementación de Arquitectura de Software y Principios de Diseño en .NET 8</b>
-                                <ul>
-                                    <li>Implementar arquitectura limpia y hexagonal que faciliten la mantenibilidad y
-                                        escalabilidad.</li>
-                                    <li>Implementar estrategias de resiliencia como circuit breakers, retries y
-                                        fallbacks.</li>
-                                    <li>Utilizar patrones de diseño como CQRS y Mediator para estructurar el código de
-                                        manera eficiente.</li>
-                                    <li>Trabajar con diferentes tipos de arquitecturas, incluyendo monolitos y
-                                        microservicios.</li>
-                                </ul>
-                            <li>
-                                <b>MongoDB y Cosmos DB</b>
-                                <ul>
-                                    <li>Realizar migraciones de datos entre diferentes versiones y entornos de MongoDB y
-                                        Cosmos DB.</li>
-                                    <li>Implementar y mantener índices para mejorar la eficiencia de las consultas.</li>
-                                    <li>Monitorear y analizar el rendimiento de las bases de datos, ajustando
-                                        configuraciones según sea necesario.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Implementación y Gestión de Contenedores Docker</b>
-                                <ul>
-                                    <li>Crear contenedores Docker para facilitar el despliegue y la escalabilidad.</li>
-                                    <li>Configurar y gestionar redes de contenedores para asegurar la comunicación
-                                        eficiente entre servicios.</li>
-                                    <li>Optimizar imágenes Docker para reducir el tiempo de despliegue y el uso de
-                                        recursos.</li>
-                                    <li>Implementar prácticas de seguridad en contenedores Docker para proteger
-                                        aplicaciones y datos.</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Herramientas y Tecnologías Utilizadas</b>
-                                <ul>
-                                    <li>Uso de Mediator para facilitar la comunicación entre componentes de la
-                                        aplicación.</li>
-                                    <li>Implementación de Hangfire para la gestión de tareas en segundo plano.</li>
-                                    <li>Patrón UnitOfWork para gestionar transacciones de bases de datos de manera
-                                        eficiente.</li>
-                                    <li>Inyección de dependencias para mejorar la modularidad y testabilidad del código.
-                                    </li>
-                                    <li>Uso de proxies para la gestión de llamadas a servicios externos.</li>
-                                    <li>Implementación de Redis Cache para mejorar el rendimiento de la aplicación
-                                        mediante el almacenamiento en caché.</li>
-                                    <li>Uso de Fluent Validation para la validación de datos de entrada de manera fluida
-                                        y expresiva.</li>
-                                    <li>Configuración y uso de Azure Key Vault para la gestión segura de secretos.</li>
-                                    <li>Implementación de Azure Communication Services.</li>
-                                    <li>Implementación de seguridad con JWT (JSON Web Tokens).</li>
-                                    <li>Implementación de SendGrid para el envío de correos electrónicos.</li>
-                                    <li>Application Insights para el monitoreo de aplicaciones.</li>
-                                    <li>Configuración y uso de Azure Entra ID B2C para la gestión de identidades y
-                                        autenticación de usuarios.</li>
-                                    <li>Implementación de pruebas unitarias con XUnit para asegurar la calidad del
-                                        código.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience">
-                    <button class="tab-button" onclick="toggleTab('indigo')">
-                        Febrero (2022) - Enero (2023) &nbsp;&nbsp;&nbsp;&nbsp;<span>INDIGO TECHNOLOGIES</span> - Neiva -
-                        Huila
-                        <i class="fas fa-chevron-down" style="float: right;"></i>
-                    </button>
-                    <div id="indigo" class="tab-content">
-                        <ul class="p2 descripcion-empleo">
-                            <li>Implementé autenticación basada en JSON Web Tokens (JWT) para reforzar la seguridad en
-                                las APIs desarrolladas.</li>
-                            <li>Diseñé y desarrollé APIs RESTful con .NET Framework y posteriormente migré y optimicé
-                                servicios a .NET 6, aplicando el enfoque "Database First" para gestionar información
-                                básica de pacientes.</li>
-                            <li>Documenté APIs utilizando Swagger (OpenAPI), facilitando la entrega y comprensión
-                                funcional de los endpoints por equipos multidisciplinarios; realicé pruebas exhaustivas
-                                con Postman.</li>
-                            <li>Consumí endpoints de aplicaciones externas mediante APIs, asegurando la integración
-                                confiable de sistemas en diferentes entornos.</li>
-                            <li>Gestioné el ciclo de vida de los proyectos en Azure DevOps y Git, abarcando subida y
-                                clonación de repositorios, creación de ramas, ejecución y revisión de pull requests,
-                                manejo y resolución de conflictos, y despliegue de soluciones.</li>
-                            <li>Participé en la configuración básica de pipelines CI/CD y colaboré en estrategias de
-                                despliegue automatizado tanto en Azure como en AWS.</li>
-                            <li>Integré soluciones y microservicios en AWS empleando Lambda para ejecutar funciones
-                                serverless orientadas a tareas específicas, y diseñé flujos de trabajo desacoplados
-                                entre distintos módulos del sistema.</li>
-                            <li>Utilicé DynamoDB para persistencia y consulta eficiente de datos NoSQL, estructurando
-                                tablas y modelos según los requerimientos de cada microservicio y aplicando indexación
-                                secundaria para optimizar búsquedas.</li>
-                            <li>Implementé API Gateway para exponer y gestionar endpoints RESTful, configurando
-                                autenticación, control de acceso y manejo de rutas para cada microservicio.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience">
-                    <button class="tab-button" onclick="toggleTab('soaint')">
-                        Junio (2021) - Enero (2022) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>SOAINT
-                            SOFTWARE</span> - Bogotá D.C
-                        <i class="fas fa-chevron-down" style="float: right;"></i>
-                    </button>
-                    <div id="soaint" class="tab-content">
-                        <ul class="p2 descripcion-empleo">
-                            <li>Participé activamente en el diseño y desarrollo de múltiples microservicios utilizando
-                                Java y Spring Boot, promoviendo arquitecturas escalables y desacopladas.</li>
-                            <li>Experiencia en diseño y consumo de APIs REST, documentadas con Swagger (OpenAPI), y
-                                pruebas de endpoints con Postman.</li>
-                            <li>Manipulación y transformación avanzada de datos en formato JSON dentro de los flujos de
-                                microservicios.</li>
-                            <li>Participé en la gestión y configuración de contenedores en Openshift, realizando
-                                despliegues y ajustes básicos en Pods.</li>
-                            <li>Amplia experiencia previa en desarrollo de procedimientos almacenados, triggers y
-                                cursores en SQL Server, así como manejo de DML para la optimización de bases de datos
-                                tradicionales.</li>
-                            <li>Integré almacenamiento seguro y eficiente de archivos mediante Amazon S3, facilitando la
-                                gestión de objetos y el versionamiento de contenido.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <!-- Hamburger (mobile) -->
+      <button id="hamburger" class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
 
-    <!-- Incluir el archivo de script -->
-    <script src="js/scripts.js"></script>
-</body>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="navbar__mobile" role="menu">
+      <a id="mob-about"    class="navbar__link" href="#about"    role="menuitem">Sobre mí</a>
+      <a id="mob-stack"    class="navbar__link" href="#stack"    role="menuitem">Stack</a>
+      <a id="mob-exp"      class="navbar__link" href="#exp"      role="menuitem">Experiencia</a>
+      <a id="mob-edu"      class="navbar__link" href="#edu"      role="menuitem">Educación</a>
+      <a id="mob-projects" class="navbar__link" href="#projects" role="menuitem">Proyectos</a>
 
+      <a id="mob-contact"  class="navbar__link" href="#contact"  role="menuitem">Contacto</a>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Text -->
+        <div class="hero__content">
+          <p class="hero__greeting">
+            <span id="hero-greeting">Hola, soy</span>
+          </p>
+          <h1 class="hero__name text-accent">Ruben Dario<br>Scalante Rojas</h1>
+          <p class="hero__role" id="hero-role">Desarrollador Backend .NET</p>
+          <p class="hero__tagline" id="hero-tagline">
+            Arquitecturas limpias · Cloud Azure &amp; AWS · +4 años de experiencia
+          </p>
+
+          <div class="hero__actions">
+            <a href="#exp" id="hero-btn-work" class="btn btn--primary">Ver experiencia</a>
+            <a href="assets/docs/CV_Ruben_Dario_Scalante_Rojas.pdf" target="_blank" rel="noopener noreferrer" id="hero-btn-cv" class="btn btn--ghost">Descargar CV</a>
+            <a href="#contact" id="hero-btn-contact" class="btn btn--ghost" style="border:none; text-decoration:underline;">Contactar</a>
+          </div>
+
+          <div class="hero__socials">
+            <!-- GitHub -->
+            <a href="https://github.com/Scalante" target="_blank" rel="noopener noreferrer"
+               class="hero__social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                         0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41
+                         -1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815
+                         2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925
+                         0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96
+                         -.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24
+                         2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375
+                         .81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0
+                         0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ruben-dario-scalante-rojas-7437911a3"
+               target="_blank" rel="noopener noreferrer"
+               class="hero__social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136
+                         1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85
+                         3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065
+                         2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771
+                         C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227
+                         24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Avatar -->
+        <div class="hero__avatar-wrap">
+          <div class="hero__avatar-glow" aria-hidden="true"></div>
+          <img src="assets/images/profile.jpg" alt="Foto de Ruben Dario Scalante Rojas"
+               class="hero__avatar" width="260" height="260" />
+          <div class="hero__status" aria-label="Estado: disponible">
+            <span class="hero__status-dot" aria-hidden="true"></span>
+            Open to work
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════════════ -->
+  <section id="about" class="section section--alt">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <h2 id="about-title" class="section-title">Sobre mí</h2>
+      </div>
+
+      <div class="about__grid">
+        <!-- Bio -->
+        <div class="fade-in">
+          <p id="about-body" class="about__body"></p>
+
+          <!-- Achievements -->
+          <div class="achievements-list" style="margin-top: var(--space-8);">
+            <h3 id="achievements-title" class="section-title" style="font-size: var(--text-xl);">Logros</h3>
+            <ul id="achievements-list"></ul>
+          </div>
+        </div>
+
+        <!-- Stat cards -->
+        <div class="about__highlights stagger">
+          <div class="highlight-card">
+            <div class="highlight-card__number">+4</div>
+            <div class="highlight-card__label">Años de experiencia backend</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__number">3</div>
+            <div class="highlight-card__label">Empresas en producción real</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-card__number">M.Sc.</div>
+            <div class="highlight-card__label">Ingeniería de Software — UNIR</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TECH STACK
+  ════════════════════════════════════════════ -->
+  <section id="stack" class="section">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <h2 id="stack-title" class="section-title">Stack Tecnológico</h2>
+      </div>
+
+      <div class="stack__grid stagger">
+
+        <div class="stack-category">
+          <div class="stack-category__title">Lenguajes</div>
+          <div class="stack-tags">
+            <span class="stack-tag stack-tag--highlight">C#</span>
+            <span class="stack-tag">Visual Basic</span>
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">SQL</span>
+            <span class="stack-tag">HTML / CSS / JS</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <div class="stack-category__title">Frameworks & Librerías</div>
+          <div class="stack-tags">
+            <span class="stack-tag stack-tag--highlight">.NET 6 / 8 / 10</span>
+            <span class="stack-tag">.NET Core 1x–3x</span>
+            <span class="stack-tag">.NET Framework</span>
+            <span class="stack-tag">ASP.NET Core MVC</span>
+            <span class="stack-tag">Spring Boot</span>
+            <span class="stack-tag">Angular</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Bootstrap</span>
+            <span class="stack-tag">DevExpress</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <div class="stack-category__title">Bases de datos</div>
+          <div class="stack-tags">
+            <span class="stack-tag stack-tag--highlight">SQL Server</span>
+            <span class="stack-tag stack-tag--highlight">MongoDB</span>
+            <span class="stack-tag">Cosmos DB</span>
+            <span class="stack-tag">DynamoDB</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Redis</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <div class="stack-category__title">Nube & DevOps</div>
+          <div class="stack-tags">
+            <span class="stack-tag stack-tag--highlight">Azure</span>
+            <span class="stack-tag stack-tag--highlight">AWS</span>
+            <span class="stack-tag">Azure DevOps (CI/CD)</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">OpenShift</span>
+            <span class="stack-tag">AWS Lambda</span>
+            <span class="stack-tag">API Gateway</span>
+            <span class="stack-tag">Amazon S3</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <div class="stack-category__title">Arquitectura & Patrones</div>
+          <div class="stack-tags">
+            <span class="stack-tag stack-tag--highlight">Clean Architecture</span>
+            <span class="stack-tag stack-tag--highlight">Hexagonal</span>
+            <span class="stack-tag">CQRS</span>
+            <span class="stack-tag">Mediator</span>
+            <span class="stack-tag">SOLID</span>
+            <span class="stack-tag">Microservicios</span>
+            <span class="stack-tag">N-Capas</span>
+            <span class="stack-tag">UnitOfWork</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <div class="stack-category__title">Herramientas</div>
+          <div class="stack-tags">
+            <span class="stack-tag">SonarQube</span>
+            <span class="stack-tag">Snyk</span>
+            <span class="stack-tag">OWASP</span>
+            <span class="stack-tag">JWT / Entra ID B2C</span>
+            <span class="stack-tag">Hangfire</span>
+            <span class="stack-tag">Fluent Validation</span>
+            <span class="stack-tag">Azure Key Vault</span>
+            <span class="stack-tag">SendGrid</span>
+            <span class="stack-tag">Application Insights</span>
+            <span class="stack-tag">XUnit</span>
+            <span class="stack-tag">Swagger / Postman</span>
+            <span class="stack-tag">Git</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════════════════ -->
+  <section id="exp" class="section section--alt">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <h2 id="exp-title" class="section-title">Experiencia Laboral</h2>
+      </div>
+
+      <!-- Rendered dynamically by main.js -->
+      <div id="timeline" class="timeline"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════════════ -->
+  <section id="edu" class="section">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <h2 id="edu-title" class="section-title">Formación Académica</h2>
+      </div>
+
+      <!-- Rendered dynamically by main.js -->
+      <div id="edu-grid" class="edu-grid stagger"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════════════ -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <h2 id="projects-title" class="section-title">Proyectos</h2>
+      </div>
+
+      <!-- Rendered dynamically by main.js -->
+      <div id="projects-grid" class="projects__grid"></div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════════ -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <h2 id="contact-title" class="section-title">Contacto</h2>
+      </div>
+
+      <div class="contact__grid">
+
+        <!-- Contact items -->
+        <div class="fade-in">
+          <div class="contact__items">
+
+            <div class="contact__item">
+              <div class="contact__item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1
+                           4.11 13 19.79 19.79 0 0 1 1.07 4.38 2 2 0 0 1 3.07 2h3a2 2 0 0 1 2 1.72
+                           c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27
+                           -1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.69A2 2 0 0 1 21 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__item-label">Teléfono</div>
+                <div class="contact__item-value">
+                  <a href="https://wa.me/573118752745" target="_blank" rel="noopener noreferrer" id="contact-phone">+57 311 875 2745</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__item-label">Correo</div>
+                <div class="contact__item-value">
+                  <a href="mailto:rubendarioscalante@gmail.com"
+                     id="contact-email">rubendarioscalante@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact__item-label">Ubicación</div>
+                <div class="contact__item-value" id="contact-location">Maito, Tarqui, Huila — Colombia</div>
+              </div>
+            </div>
+
+          </div>
+
+          <p id="contact-available" class="contact__available" style="margin-top: var(--space-6);">
+            Disponible para trabajo remoto.
+          </p>
+
+          <div class="contact__socials" style="margin-top: var(--space-6); display: flex; gap: var(--space-4);">
+            <a href="https://github.com/Scalante" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:24px; height:24px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ruben-dario-scalante-rojas-7437911a3" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:24px; height:24px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Sidebar info -->
+        <div class="contact__sidebar fade-in">
+
+          <div class="info-box">
+            <div id="langs-title" class="info-box__title">Idiomas</div>
+            <div id="langs-list" class="lang-list"></div>
+          </div>
+
+          <div class="info-box">
+            <div id="hobbies-title" class="info-box__title">Hobbies</div>
+            <div id="hobbies-list" class="hobbies-list"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        <span id="footer-text">Diseñado &amp; desarrollado por</span> <span id="footer-name">Ruben Dario Scalante Rojas</span> · <span id="footer-year"></span>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       BACK TO TOP
+  ════════════════════════════════════════════ -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS — load order matters:
+       1. i18n.js (data)
+       2. main.js (logic, reads TRANSLATIONS)
+  ════════════════════════════════════════════ -->
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* Footer year — inline to avoid a separate file */
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
 </html>
