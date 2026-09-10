@@ -66,7 +66,7 @@ const TRANSLATIONS = {
           id:       'inteia',
           company:  'INTEIA',
           role:     'Desarrollador Backend .NET',
-          period:   'Feb 2023 — Actual',
+          period:   'Feb 2023 — Mar 2026',
           location: 'Medellín, Antioquia',
           bullets: [
             'Migré el backend de .NET Core 3.1 a .NET 6, actualizando dependencias y validando la compatibilidad mediante pruebas unitarias y de integración exhaustivas antes de cada despliegue a producción.',
@@ -260,7 +260,7 @@ const TRANSLATIONS = {
           id:       'inteia',
           company:  'INTEIA',
           role:     '.NET Backend Developer',
-          period:   'Feb 2023 — Present',
+          period:   'Feb 2023 — Mar 2026',
           location: 'Medellín, Antioquia',
           bullets: [
             'Migrated the backend from .NET Core 3.1 to .NET 6, updating dependencies and validating compatibility through comprehensive unit and integration testing before each production deployment.',
